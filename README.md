@@ -3,6 +3,13 @@
 六角形ボード上で行う2人用アブストラクトストラテジーゲームのReact実装です。
 
 ![Nonaga Game](https://img.shields.io/badge/React-Game-61DAFB?style=flat-square&logo=react)
+![Mobile Ready](https://img.shields.io/badge/Mobile-Ready-green?style=flat-square)
+
+## 🎮 プレイする
+
+**👉 [https://warabinbin.github.io/nonaga-/](https://warabinbin.github.io/nonaga-/)**
+
+スマホ・タブレット・PCのブラウザで遊べます。
 
 ## ゲーム概要
 
@@ -28,45 +35,27 @@ Nonagaは、19個の六角形ディスクで構成されるボード上で、3�
 - 相手が直前に動かしたディスクは移動不可
 - ディスク移動でボードが分断されてはならない
 
+## 🚀 GitHub Pagesへのデプロイ
+
+1. このリポジトリをフォークまたはクローン
+2. リポジトリの Settings → Pages を開く
+3. Source を "Deploy from a branch" に設定
+4. Branch を "main" / "(root)" に設定
+5. Save をクリック
+6. 数分後に `https://[username].github.io/[repo-name]/` でアクセス可能
+
 ## 技術スタック
 
-- React (Hooks)
+- React 18 (CDN)
 - SVG描画
 - 六角形座標系 (Axial Coordinates)
-
-## 使い方
-
-### React Artifactとして使用
-
-このコンポーネントはClaude.aiのReact Artifact機能で直接実行できます。
-
-### ローカルで実行
-
-```bash
-# 依存関係のインストール
-npm install react react-dom
-
-# 開発サーバー起動
-npm start
-```
-
-## テスト
-
-```bash
-npm test
-```
-
-74個のテストケースで以下をカバー：
-
-- 勝利判定ロジック（三角形、一直線、V字）
-- 駒の移動ルール
-- ディスクの移動制約
-- UI/UXインタラクション
+- レスポンシブデザイン（スマホ対応）
 
 ## ファイル構成
 
 ```
-├── nonaga.jsx           # メインゲームコンポーネント
+├── index.html           # メインページ（スマホ対応版）
+├── nonaga.jsx           # Reactコンポーネント（開発用）
 ├── nonaga.test.jsx      # 基本テスト
 ├── nonaga.win.test.jsx  # 勝利判定テスト
 ├── nonaga.win-conditions.test.jsx  # 勝利条件の詳細テスト
