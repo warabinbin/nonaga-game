@@ -7,7 +7,7 @@
 
 ## 🎮 プレイする
 
-**👉 [https://warabinbin.github.io/nonaga-/](https://warabinbin.github.io/nonaga-game/)**
+**👉 [https://warabinbin.github.io/nonaga-game/](https://warabinbin.github.io/nonaga-game/)**
 
 スマホ・タブレット・PCのブラウザで遊べます。
 
